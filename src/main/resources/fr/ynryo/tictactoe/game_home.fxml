@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<VBox fx:id="Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="600.0" style="-fx-background-color: #2b230e;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ynryo.tictactoe.HelloController">
    <children>
-      <Label alignment="CENTER" prefHeight="96.0" prefWidth="600.0" text="Ynryo's Tictactoe" />
+      <Label fx:id="main_title" alignment="CENTER" prefHeight="96.0" prefWidth="600.0" text="Ynryo's Tictactoe" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Button mnemonicParsing="false" text="Nouvelle partie" />
+      <Button mnemonicParsing="false" text="Button" />
+      <Button mnemonicParsing="false" text="Quitter" />
    </children>
 </VBox>
